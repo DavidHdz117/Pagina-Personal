@@ -1,0 +1,107 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #fc1068;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #fff;
+}
+.title{
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+.subtitle{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.input{
+    width: 85%;
+    padding: 10px;
+    border-width: 3px;
+    border-color: rgba(0, 0, 0, 0.539);
+    border-radius: 7px;
+    border-style:solid;
+    background-color: #0ce3e8;
+    text-align: center;
+}
+.buttons, .container_b{
+    background-color: #f9ce07;
+    display: flex;
+}
+#op{
+    margin-left: 10px;
+}
+.button{
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 7px;
+    background-color: #fc1068;
+    color: #fff;
+    cursor: pointer;
+    border-width: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+}
+#r{
+    margin-top: 2%;
+}
+.result{
+    background-color: #f9ce07;
+    margin-top: .5%;
+    width: 120px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (max-width:768px){
+    .buttons{
+        width: 40vw;
+        height: 40vh;
+        padding: auto;
+    }  
+    .container_b{
+
+        width: 120%;
+        height: 70%;
+        margin-top: 23%;
+        margin-right: 5vw;
+        margin-left: -25vw;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 1%S;
+        justify-content: center;
+        align-items: center;
+    }
+    #op{
+        margin-left: 24%;
+        align-items: center;
+    }
+    .button{
+        width: 26%;
+        height: 26%;
+        background-color: #f9ce07;
+        border-style: none;
+        color: #fc1068 ;
+        font-size: 45px;
+    }
+    .buttons, .container_b{
+        background-color: #fc1068;
+        display: flex;
+    }
+    #r{
+        margin-top: -5%;
+    }
+    .input{
+        font-size: 15px;
+    }
+}
