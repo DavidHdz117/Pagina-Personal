@@ -1,0 +1,33 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    background-color: #4a403d;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #ea804c;
+}
+h1{
+    margin: 5px;
+}
+label, input {
+    margin: 3%;
+}
+.form{
+    width: 35%;
+    height: 75%;
+    font-style: bold;
+}
+input{
+    width: 95%;
+    height: 5%;
+    padding: 2px;
+    background-color: #facf7d;
+    
+}
+.send{
+    background-color: #ea804c;
+    width: 25%;
+    height: 7%;
+    margin-left: 37.5%;
+}

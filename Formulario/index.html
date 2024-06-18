@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Práctica de Validación</h1>
+        <h2>Formulario de registro</h2>
+        <form action="" method="get" class="form">
+            <label for="username">Nombre de usuario: (5-15 caracteres alfanumericos)</label><br>
+            <input type="text" id="username" name="username" pattern="^[a-zA-Z0-9]{5,15}$" 
+            title="Debe tener entre 5 y 15 cararteres alfanuméricos" required placeholder="Username"><br>
+
+            <label for="password">Contraseña: (almenos 8 caracteres [may, min, núm, @$!%*?&]) </label><br>
+            <input type="password" id="password" name="password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@$!%*?&]).{8,}$" 
+            title="Debe tener almenos 8 caracteres, incluyendo al menos una letra mayúscula, una minúscula, un número y un carácter especial (!, @, #, etc.)."
+            required placeholder="Password"><br>
+
+            <label for="email">Correo electrónico:</label><br>
+            <input type="email" id="email" name="email" pattern="^[a-zA-Z0-9$!%*?&]+@[a-zA-Z.-]+.[a-zA-Z]{5,}$"
+            title="Debe ser una dirección de correo válida" placeholder="Email"><br>
+
+            <label for="tel">Número de teléfono: (Formato internacional)</label><br>
+            <input type="tel" id="tel" name="tel" pattern="^\+[0-9]{1,15}$"
+            title="Debe seguir el formato internacional, comenzando con el signo + y hasta 15 dígitos." placeholder="Phone number"><br>
+
+            <label for="fech">Fecha de nacimiento: (Formato YYYY-MM-DD)</label><br>
+            <input type="text" id="date" name="date" pattern="^([0-9]{4})-([0-9]{2})-([0-9]{2})$" 
+            title="Debe estar en el formato YYYY-MM-DD" placeholder="YYYY-MM-DD"><br>
+
+            <label for="cp">Código postal: (Exactamente 5 dígitos)</label><br>
+            <input type="text" id="cp" name="cp" pattern="^[0-9]{5,5}$" 
+            title="Debe consistir en exactamente 5 dígitos" placeholder="CP"><br>
+
+            <input type="submit" value="Enviar" class="send">
+        </form>
+
+    </div>
+</body>
+</html>
